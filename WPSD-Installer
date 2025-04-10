@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+COL_NC='\e[0m' # No Color
+COL_BRIGHT_RED='\e[1;31m'
+CROSS="${BOLD}[${COL_BRIGHT_RED}✗${COL_NC}]"
+
+clear
+echo ""
+echo -e "\n${CROSS} ${COL_BRIGHT_RED}ERROR:${COL_NC} You can no longer install WPSD with this method."
+echo -e "    If you'd like to install WPSD, you will need to install it using a WPSD disk image:"
+echo ""
+echo -e "    <https://wpsd.radio/>\n"
+echo ""
