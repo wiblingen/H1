@@ -894,8 +894,8 @@ else
 
         curl -Ls -A "Auto-Task Installer $uaStr" -o /etc/systemd/system/wpsd-nightly-tasks.service https://raw.githubusercontent.com/wiblingen/WPSD-Helpers/refs/heads/master/supporting-files/wpsd-nightly-tasks.service
         curl -Ls -A "Auto-Task Installer $uaStr" -o /etc/systemd/system/wpsd-nightly-tasks.timer https://raw.githubusercontent.com/wiblingen/WPSD-Helpers/refs/heads/master/supporting-files/wpsd-nightly-tasks.timer
-        curl -Ls -A "Auto-Task Installer $uaStr" -o /etc/systemd/system/wpsd-running-tasks.service https://raw.githubusercontent.com/wiblingen/WPSD-Helpers/refs/heads/master/supporting-files/wpsd-nightly-tasks.service
-        curl -Ls -A "Auto-Task Installer $uaStr" -o /etc/systemd/system/wpsd-running-tasks.timer https://raw.githubusercontent.com/wiblingen/WPSD-Helpers/refs/heads/master/supporting-files/wpsd-nightly-tasks.timer
+        curl -Ls -A "Auto-Task Installer $uaStr" -o /etc/systemd/system/wpsd-running-tasks.service https://raw.githubusercontent.com/wiblingen/WPSD-Helpers/refs/heads/master/supporting-files/wpsd-running-tasks.service
+        curl -Ls -A "Auto-Task Installer $uaStr" -o /etc/systemd/system/wpsd-running-tasks.timer https://raw.githubusercontent.com/wiblingen/WPSD-Helpers/refs/heads/master/supporting-files/wpsd-running-tasks.timer
         systemctl daemon-reload
 
         systemctl enable wpsd-running-tasks.timer
